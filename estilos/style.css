@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+  color: #181825;
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(to left bottom, #28248c, #312999, #392ea7, #4234b5, #4b39c3);}
+
+#clima {
+  background-image: linear-gradient(to right top, #7fffd4, #6af8d6, #54f1d9, #38eadb, #00e3dd);
+  box-shadow: 0px 0 1px 1px #00e3dd;
+  margin-top: 1em;
+  border-radius: 30px;
+}
+
+#expandidoMain {
+  background: #fff;
+  box-shadow: 0px 9px 30px #7fffd4;
+  margin-top: 1em;
+  border-radius: 30px;
+}
+
+#gridLocal {
+  margin-left: 10px;
+}
+
+#fecha {
+  margin-left: 10px;
+}
+
+#iconoMain {
+  display: block;
+  margin: auto;
+}
+
+#icono {
+  display: block;
+  margin: auto;
+}
+
+#grados-temperatura {
+  font-weight: 600;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#descripcionClima {
+  font-weight: 600;
+  font-size: 1.8em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 2rem;
+}
+
+#container-info {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*#datosPost #iconoPost #gradosPost {
+    font-family: 'Source Sans Pro', sans-serif;    
+}*/
+
+.pronosticosDia {
+  border-radius: 30px;
+  background: #00e3dd;
+  -webkit-transition: background 2s; /* Safari */
+  transition: background 0.2s;
+  box-shadow: 0px 0 2px 2px #00e3dd;
+  -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.pronosticosDia:hover {
+  background: #adf6ff;
+}
+
+#container-DatosPost {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#container-DatosPost p:first-of-type {
+  font-size: 1.8em;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #13e4e3;
+}
+
+#container-DatosPost:last-child {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+#container-gradosPost {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  font-size: 3rem;
+}
+
+#iconoPost {
+  display: block;
+  margin: auto;
+}
+
+#iconoPost p {
+  font-size: 1.5rem;
+  color: #2ea7e0;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 2rem;
+}
+
+#iconoPost > p > i {
+  color: #2ea7e0;
+}
+
+#temperaturaMin {
+  color: #8e8e8e;
+}
+
+#gridGradosPost hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #13e4e3;
+  margin: none;
+  padding: 0;
+}
+
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+/*.temperatura, .localizacion{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperatura{
+    flex-direction: column;
+}
+
+.grados{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.grados span{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.grados h2{
+    font-size: 40px;
+} */
